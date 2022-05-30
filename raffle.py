@@ -20,8 +20,6 @@ def scraping_ig(url):
     driver = webdriver.Chrome(options=chrome_options)
     driver.set_window_size(1024, 768)
 
-    print("Welcome to Insta Prize\n")
-
     url_ig = 'https://www.instagram.com'
 
     driver.get(url_ig)
