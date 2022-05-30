@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;300;400;500;700&display=swap");
+
+h1 {
+  font-family: "Sora", sans-serif;
+  color: #e75a7c;
+  -webkit-text-stroke: 0.5px #f2f5ea;
+  font-size: 3.5rem;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: "Sora", sans-serif;
+  color: #f2f5ea;
+}
+
+label {
+  font-family: "Sora", sans-serif;
+  color: #f2f5ea;
+}
+
+input[type="url"] {
+  font-family: "Sora", sans-serif;
+  color: #222020;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+body {
+  background-color: #222020;
+}
+
+.section-prize {
+  display: block;
+  text-align: center;
+}
+
+.selectors {
+  margin-bottom: 40px;
+}
+
+.form-button {
+  padding: 12px;
+  background-color: #e75a7c;
+  border: none;
+  border-radius: 5px;
+  color: #f2f5ea;
+  font-size: 1rem;
+  font-family: "Sora", sans-serif;
+}

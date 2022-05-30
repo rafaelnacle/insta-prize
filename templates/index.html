@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static',filename='../static/styles/styles.css') }}"
+    />
+    <title>Insta Prize</title>
+  </head>
+  <body>
+    <section class="section-prize">
+      <h1 class="title">Insta Prize</h1>
+      <p>1) Insert a post URL on the input below:</p>
+      <form action="{{url_for('result')}}" method="get">
+        <input
+          type="url"
+          name="url"
+          id="url"
+          placeholder="Insert here the url of a post..."
+          pattern="https://.*"
+          size="30"
+          required
+        />
+        <p>2) Select the number of winners you want:</p>
+        <div class="selectors">
+          <input type="radio" id="1" name="winner" value="1" />
+          <label for="1">One Winner</label>
+          <input type="radio" id="2" name="winner" value="2" />
+          <label for="2">Two Winners</label>
+          <input type="radio" id="3" name="winner" value="3" />
+          <label for="3">Three Winners</label>
+        </div>
+        <button type="submit" class="form-button">Select Winner</button>
+      </form>
+    </section>
+  </body>
+</html>
